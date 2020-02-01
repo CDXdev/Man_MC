@@ -1,0 +1,14 @@
+Rendre le site responsive
+	width: 253px; => width: 100%;
+Ne pas mettre d'espaces, d'accents, de caractères spéciaux, ... dans les noms de fichiers
+	Manuel MSIHID.jpg => Manuel_MSIHID.jpg
+Ne pas trop remplir la balise title pour qu'elle puisse être lisible en entier dans le navigateur
+	.."UNE MUSIQUE A VOTRE IMAGE - SOUNDTRACK AUTHOR" : ________M_A_N_U_E_L___M_S_I_H_I_D_________ Manuel MSIHID Compositeur de Musique de Film habillage musical melodiste jingle generique TV pub documentaire fiction court ou long metrage style symphonique ethno electro => MANUEL MSIHID : SOUNDTRACK AUTHOR
+Proposer des tailles de favicon différentes (16x16, 32x32 et 96x96) pour un meilleur affichage dans les favoris et raccourcis du navigateur
+Les balises meta "reply-to" et "keywords" sont de moins en moins utilisées et leur intérêt est maintenant réduit
+Trop d'éléments dans la balise meta keywords optimal = 5 ou 6 ; max = 10
+Styles en scss et sass à utiliser plutôt pour des serveurs JS, type NodeJS, privilégier le css pour la compatibilité
+Les contenus créés avec DirectX ne fonctionneront pas optimalement ou pas du tout sur des machines ne fonctionnant pas sous Windows (Linux, MacOS, Android, iOS, ...)
+Pour l'affichage d'images, préférer la balise <img> à la balise <div background="">
+Pour plus de fluidité dans les animations, surtout pour les mauvaises connections, ne pas faire de redirection de page, mais préférer tout charger puis lancer les animations en javascript avec l'événement "load" (listener "onload=nomDuHandler()")
+L'animation par le gif dans le header de la page peut paraitre saccadée => privilégier une animation javascript ou un gif de 60 images par secondes

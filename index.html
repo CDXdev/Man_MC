@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>.."UNE MUSIQUE A VOTRE IMAGE - SOUNDTRACK AUTHOR" : ________M_A_N_U_E_L___M_S_I_H_I_D_________ Manuel MSIHID Compositeur de Musique de Film habillage musical melodiste jingle generique TV pub documentaire fiction court ou long metrage style symphonique ethno electro</title>
+			<meta charset="utf-8">
+			<META NAME="description" content="Melodiste Compositeur realise selon vos souhaits des creations sur mesures a l'image pres, Prix international au 25eme Festival de l'Image Sous Marine, experiences:Chanson-Habillage-Jingle-Generique-TV-Pub-Documentaire-Animation-Fiction-Court-Métrage-Long-Metrage...">
+			<style type="text/css">
+				html, body {
+					height: 100%;
+					margin: 0;
+				}
+				body {
+					background-repeat: repeat;
+					background-position: center;
+					text-align: center;
+					overflow: hidden;
+				}
+				#mask {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+			</style>
+			<script>
+				function animate() {
+					var mask = document.getElementById("mask");
+					var size = 100;
+					function iter() {
+						setTimeout( function() {
+							size = size + 6;
+							mask.style.height = size+"px";
+							mask.style.width = size+"px";
+							if(window.innerWidth > size || window.innerHeight > size) {
+								iter();
+							}
+							else {
+								change();
+							}
+						}, 10);
+					}
+					iter();
+				}
+				function change() {
+					document.getElementsByTagName('body')[0].remove();
+				}
+			</script>
+		</head>
+		<body background="./ressources/image/Manuel_MSIHID.jpg" onload="animate()">
+			<img id="mask" src="./ressources/image_mod/mask.png"/>
+		</body>
+	</html>

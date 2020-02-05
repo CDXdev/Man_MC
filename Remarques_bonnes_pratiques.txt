@@ -12,3 +12,4 @@ Les contenus créés avec DirectX ne fonctionneront pas optimalement ou pas du t
 Pour l'affichage d'images, préférer la balise <img> à la balise <div background="">
 Pour plus de fluidité dans les animations, surtout pour les mauvaises connections, ne pas faire de redirection de page, mais préférer tout charger puis lancer les animations en javascript avec l'événement "load" (listener "onload=nomDuHandler()")
 L'animation par le gif dans le header de la page peut paraitre saccadée => privilégier une animation javascript ou un gif de 60 images par secondes
+Prendre en compte les alertes dans la console firefox (F12 > console)
